@@ -1,0 +1,25 @@
+q1 
+a)
+cd ~/desktop/acct890
+ ssh -i 44134843.pem ubuntu@ec2-3-104-79-88.ap-southeast-2.compute.amazonaws.com
+ curl https://www.staff.hs-mittweida.de/~wuenschi/data/media/compbiolbook/chapter-10-shell-programming--triplet-stop.sh> triplet-stop.sh
+cat triplet-stop.sh
+
+b)
+vi trip-stop.sh
+cat triplet-stop.sh
+./triplet-stop.sh 456taa223456taa123456789
+
+
+q2
+a)ls
+b)uniq -u tutes.txt
+
+q3
+
+vim q4.txt
+
+a)egrep '^[^ ]+ [^ ]+ [^ ]+$' q4.txt
+b)egrep -e '-[0-9]+' q4.txt
+c)egrep '\s{1,}+[0-9]+\s{1,}|\s{1,}+-[0-9]+\s{1,}' q4.txt
+d)egrep -e 'hydrogenase' q4.txt | egrep -v 'dehydrogenase'
